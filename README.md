@@ -1,4 +1,6 @@
 
+![alt text](https://github.com/0xbitx/dedsecimsi/blob/main/dedsecimsi.png "DEDSECIMSI")
+
 #### DEDSECIMSI is python based tool which use for capturing imsi numbers and sms and also you able to customize your capturing and it's make easy to capture sms and imsi numbers for those who not have much knowledge about gsm packets capturing.
 
 Disclaimer :This program was made to understand how GSM network works. Not for bad hacking ! We are not responsible for any illegal activity !
