@@ -1,3 +1,4 @@
+
 #### DEDSECIMSI is python based tool which use for capturing imsi numbers and sms and also you able to customize your capturing and it's make easy to capture sms and imsi numbers for those who not have much knowledge about gsm packets capturing.
 
 Disclaimer :This program was made to understand how GSM network works. Not for bad hacking ! We are not responsible for any illegal activity !
@@ -35,9 +36,9 @@ kal -s GSM900
 
 ##### GSM-900:
 
-###### chan: 4 (935.8MHz + 320Hz)	power: 1829406.95
+#### chan: 4 (935.8MHz + 320Hz)	power: 1829406.95
 
-###### chan: 11 (937.2MHz + 308Hz)	power: 4540354.88
+#### chan: 11 (937.2MHz + 308Hz)	power: 4540354.88
 
 #### Now you need to capture gsm traffic using gr-gsm on frequency of your any gsm base station which you get from kalibrate.
 
@@ -70,6 +71,7 @@ grgsm_livemon -f <your_frequency>M
 # options:
 
 1. python imsi.py -h                                                                                           
+
 Usage: imsi.py: [options]
 
 Options:
@@ -88,7 +90,7 @@ Options:
 
 1. python imsi.py -s example.db
 
-####For capture only specific imsi. (It's will show you only your given imsi result)
+#### For capture only specific imsi. (It's will show you only your given imsi result)
 
 1. python imsi.py -m imsi_here (Example: python imsi.py -m 123456789101112)
 
