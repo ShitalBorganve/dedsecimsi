@@ -7,7 +7,7 @@ Disclaimer :This program was made to understand how GSM network works. Not for b
 
   # Setup
   
-  Install DEDSEC CATCHER :
+  Install DEDSECIMSI :
   ```
   git clone https://github.com/0xbitx/dedsecimsi.git
   pip3 install pyshark flask flask_socketio sqlite3
@@ -57,35 +57,37 @@ Disclaimer :This program was made to understand how GSM network works. Not for b
   grgsm_livemon -f 935.8M
   ```
   if you see output that's mean you getting gsm packets than continue other setps else change frequency.
+	  
 	  ```
 	  2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
 	  2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
 	  2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
 	  2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b 2b
 	  ...
-	  ```
-	  Now every thing is ready you can start now capturing sms or imsi numbers using dedsec.
-	  You able to run imsi catcher and sms sniffer both at same time using 2 seprate terminal for capture imsi numbers and sms both at same time.
-	  ```
-	  cd <your dedsec_catcher folder> #Example cd dedsec_catcher
-	  ```
+	  
+ Now every thing is ready you can start now capturing sms or imsi numbers using dedsec.
+ You able to run imsi catcher and sms sniffer both at same time using 2 seprate terminal for capture imsi numbers and sms both at same time.
+	  
+```	  
+cd <your dedsec_catcher folder> #Example cd dedsec_catcher
+```
 
 ## Capturing IMSI :
   
 #### Run this command to quick start imsi capturing.
-'''
+```
 python imsi.py
-'''
+```
 
 # options:
-'''
+```
 python imsi.py -h                                                                                           
-'''
+```
 
 Usage: imsi.py: [options]
 
 Options:
-'''
+```
 -h, --help            show this help message and exit
 
 -i IFACE, --iface=IFACE  Interface (default : lo)
@@ -95,33 +97,33 @@ Options:
 -m IMSI, --imsi=IMSI  IMSI to track (default : None, Example: 123456789101112)
 
 -s SAVE, --save=SAVE  Save all imsi numbers to sqlite file. (default : None)
-'''
+```
 
 #### For save all imsi numbers with details in sqlite file.(It's will show you output on screen and also save in file)
-'''
+```
 python imsi.py -s example.db
-'''
+```
 
 #### For capture only specific imsi. (It's will show you only your given imsi result)
-'''
+```
 python imsi.py -m imsi_here (Example: python imsi.py -m 123456789101112)
-'''
+```
 
  ## Capturing SMS :
 #### Run this command to quick start sms capturing.
-'''
+```
 python sms.py
-'''
+```
 
 # Options :
-'''
+```
 python sms.py -h                                                                                           
-'''
+```
 
 Usage: sms.py: [options]
 
 Options:
-'''
+```
 -h, --help                show this help message and exit
 
 -i IFACE, --iface=IFACE   Interface (default : lo)
@@ -131,17 +133,17 @@ Options:
 -n NUMBER, --number=NUMBER  Phone number (default : None)
 
 -s SAVE, --save=SAVE  Save all text messages to sqlite file. (default: None)
-'''
+```
 
 #### For save all sms in sqlite file.(It's will show you output on screen and also save in file)
-'''
+```
 python sms.py -s example.db
-'''
+```
 
 #### For capture only specific phone number sms. (It's will show you only your given phone number result)
-'''
+```
 python sms.py -n phone_number_here (Example: python SmsEvil.py -n 09095676722)
-'''
+```
 
 # Requirements:
 
