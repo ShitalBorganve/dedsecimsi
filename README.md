@@ -69,7 +69,7 @@ Disclaimer :This program was made to understand how GSM network works. Not for b
  You able to run imsi catcher and sms sniffer both at same time using 2 seprate terminal for capture imsi numbers and sms both at same time.
 	  
 ```	  
-cd <your dedsec_catcher folder> #Example cd dedsec_catcher
+cd <your dedsecimsi folder> #Example cd dedsecimsi
 ```
 
 ## Capturing IMSI :
